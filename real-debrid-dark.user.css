@@ -1,0 +1,245 @@
+/* ==UserStyle==
+@name           Real-Debrid Dark Theme
+@namespace      github.com/openstyles/stylus
+@version        1.0.2
+@description    A nice dark theme for Real-Debrid (excluding the API documentation)
+@author         Slava_vas
+==/UserStyle== */
+
+@-moz-document regexp("https?://(www\\.)?real-debrid\\.com/.*") {
+
+    /* Базовый фон и текст */
+    html, body {
+        background-color: #141517 !important;
+        color: #d4d7dd !important;
+    }
+
+    * {
+        text-shadow: none !important;
+    }
+
+    h1, h2, h3, h4, h5, label, span.important_text {
+        color: #f0f2f5 !important;
+    }
+
+    a {
+        color: #4cc2ff !important;
+    }
+    a:hover {
+        color: #82d4ff !important;
+    }
+
+    /* Шапка и подвал */
+    #header, .header_pattern {
+        background-color: #1a1b1e !important;
+        border-bottom: 1px solid #2c2e33 !important;
+    }
+
+    .footer_bg {
+        background: #1a1b1e !important;
+        border-top: 1px solid #2c2e33 !important;
+    }
+    .footer_box, .footer_box2, .footer_box3, .footer_box span {
+        color: #909296 !important;
+    }
+    .footer_legal {
+        background: #101113 !important;
+        border-top: 1px solid #2c2e33 !important;
+    }
+
+    /* Плашка профиля */
+    #header_img_right {
+        background: #222428 !important;
+        border: 1px solid #34373e !important;
+        border-radius: 6px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+        color: #d4d7dd !important;
+    }
+    .login_left, .login_left h3, .login_left li, .login_left li a,
+    .login_right li a {
+        color: #e1e3e8 !important;
+    }
+    .login_left li a:hover, .login_right li a:hover {
+        color: #4cc2ff !important;
+    }
+/* Бейджи срока премиума и очков лояльности */
+    .valid, .fidelity {
+        background: #1a2d42 !important;
+        border: 1px solid #2b4c6f !important;
+        border-radius: 4px !important;
+        color: #8cc8ff !important;
+        font-weight: bold !important;
+        line-height: 16px !important;
+        padding: 1px 6px !important;
+    }
+
+    /* Контейнеры и сайдбар */
+    #wrapper_global {
+        background: #1e2024 !important;
+        border: 1px solid #2e3138 !important;
+        border-radius: 8px !important;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
+        margin-top: 15px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .sidebar {
+        background: #25282e !important;
+        border: 1px solid #32363e !important;
+        border-radius: 6px !important;
+    }
+
+    /* Списки, аккордеоны и сноски на странице тарифов */
+    .liste_ok_black li a, .liste_arrow li, .liste_arrow li a, .liste_pdf li a,
+    .accordion-faq span, .accordion-plug span, .accordion-limites span,
+    .liste_arrow_price li, .liste_arrow_price li span, .px10 {
+        color: #b8bcc4 !important;
+    }
+    .liste_ok_black a:hover, .liste_arrow li a:hover {
+        color: #4cc2ff !important;
+    }
+
+    /* Поля ввода (включая поиск в Поддержке и поля тикетов) */
+    input[type="text"], input[type="password"], select, textarea, .inputText,
+    input.keywords_input_text, .textfieldhelp, input.ticketform_input_text,
+    input.ticketform_input_mandatory_fields {
+        background-color: #141517 !important;
+        color: #f0f2f5 !important;
+        border: 1px solid #383b42 !important;
+        border-radius: 6px !important;
+    }
+    input[type="text"]:focus, textarea:focus, select:focus,
+    input.keywords_input_text:focus, .textfieldhelp:focus,
+    input.ticketform_input_text:focus, input.ticketform_input_mandatory_fields:focus {
+        border-color: #4cc2ff !important;
+        box-shadow: 0 0 0 2px rgba(76, 194, 255, 0.2) !important;
+    }
+
+    /* Карточки ответов, форма тикетов и загрузка файлов в Поддержке */
+    #answerdetails, #beforeticket, p.titleanswerdetails, div.helpattachment {
+        background-color: #25282e !important;
+        color: #d4d7dd !important;
+        border-color: #383b42 !important;
+    }
+    #helpattachment_p {
+        color: #b8bcc4 !important;
+    }
+    .inputWithIcon.inputIconBg i, .inputWithText.inputTextBg p {
+        background-color: #2c2f36 !important;
+        color: #d4d7dd !important;
+    }
+
+    /* Кнопки */
+    input[type="submit"], input[type="button"], input[type="button"].reset,
+    a.btn_grey, a.btn_grey_more, .helpbutton {
+        background: #2c2f36 !important;
+        color: #f0f2f5 !important;
+        border: 1px solid #424650 !important;
+        border-radius: 4px !important;
+        padding: 0 15px !important;
+        width: auto !important;
+        cursor: pointer !important;
+    }
+    a.btn_grey span, a.btn_grey_more span {
+        background: none !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        color: inherit !important;
+    }
+    input[type="submit"]:hover, input[type="button"]:hover,
+    a.btn_grey:hover, a.btn_grey_more:hover, .helpbutton:hover {
+        background: #383c45 !important;
+        border-color: #4cc2ff !important;
+        color: #ffffff !important;
+    }
+
+    /* Разделители и кнопка выбора языка */
+    hr, .content_separator, .content_separator_small, .content_separator_mini {
+        border-color: #34373e !important;
+        background: none !important;
+        border-top: 1px solid #34373e !important;
+    }
+    .lang_list .showmore {
+        background-color: #2c2f36 !important;
+        border: 1px solid #424650 !important;
+        color: #d4d7dd !important;
+        border-radius: 3px !important;
+    }
+    .lang_list .showmore:hover {
+        background-color: #383c45 !important;
+        border-color: #4cc2ff !important;
+        color: #ffffff !important;
+    }
+
+    /* Таблицы */
+    table, table td {
+        border-color: #2e3138 !important;
+        color: #d4d7dd !important;
+    }
+    .g1 { background-color: #1e2024 !important; }
+    .g2 { background-color: #24272c !important; }
+    .g1:hover, .g2:hover { background-color: #2d3138 !important; }
+
+    /* Статусы ссылок */
+    .link-generated {
+        background-color: #1b2e22 !important;
+        color: #8ce99a !important;
+        border-color: #2b4c36 !important;
+    }
+    .link-error {
+        background-color: #331c1e !important;
+        color: #ffa8a8 !important;
+        border-color: #52292d !important;
+    }
+    .link-not-generated {
+        background-color: #25282e !important;
+        color: #adb5bd !important;
+        border-color: #373b44 !important;
+    }
+    .link-generated a, .link-error a, .link-not-generated a {
+        color: #ffffff !important;
+        text-decoration: underline !important;
+    }
+
+    /* Модальные окна */
+    #facebox .content, .ui-widget-content {
+        background: #222428 !important;
+        color: #d4d7dd !important;
+        border-color: #383b42 !important;
+    }
+    .ui-widget-header {
+        background: #2c2f36 !important;
+        color: #f0f2f5 !important;
+        border-color: #383b42 !important;
+    }
+/* === СТРАНИЦА ПРИВЯЗКИ УСТРОЙСТВА (/device) И ЛОГИНА (Bootstrap) === */
+    body {
+        background-image: none !important;
+    }
+
+    /* Белые карточки и панели Bootstrap */
+    .panel, .panel-default, .panel-heading, .panel-body, .panel-footer,
+    .well, .card, .login-box, .device-box {
+        background-color: #1e2024 !important;
+        border-color: #2e3138 !important;
+        color: #d4d7dd !important;
+    }
+
+    /* Плашки уведомлений Bootstrap (alert-info, alert-warning, alert-danger) */
+    .alert-info {
+        background-color: #162638 !important;
+        border-color: #244366 !important;
+        color: #82d4ff !important;
+    }
+    .alert-warning {
+        background-color: #332b18 !important;
+        border-color: #5c4d28 !important;
+        color: #ffd43b !important;
+    }
+    .alert-danger {
+        background-color: #331c1e !important;
+        border-color: #52292d !important;
+        color: #ffa8a8 !important;
+    }
+}
