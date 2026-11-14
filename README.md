@@ -1,3 +1,6 @@
+## Preview
+![Real-Debrid Dark Theme Preview](./DarkThemePreview.png)
+
 # Real-Debrid Dark Theme
 
 A comfortable, soft dark theme for [Real-Debrid](https://real-debrid.com/) designed to reduce eye strain without harsh pure-black contrasts.
